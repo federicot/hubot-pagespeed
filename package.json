@@ -1,0 +1,19 @@
+{
+  "name": "hubot-pagespeed",
+  "version": "0.0.1",
+  "description": "Hubot does pagespeed",
+  "main": "hubot-pagespeed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot",
+    "pagespeed"
+  ],
+  "author": "Federico Tarantini <federicot@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pretty-bytes": "^1.0.1",
+    "psi": "^0.1.2"
+  }
+}
