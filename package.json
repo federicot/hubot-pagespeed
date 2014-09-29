@@ -1,6 +1,6 @@
 {
   "name": "hubot-pagespeed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hubot does pagespeed",
   "repository" :
     { "type" : "git",
