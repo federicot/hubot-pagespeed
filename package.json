@@ -2,6 +2,10 @@
   "name": "hubot-pagespeed",
   "version": "0.0.1",
   "description": "Hubot does pagespeed",
+  "repository" :
+    { "type" : "git",
+      "url" : "https://github.com/federicot/hubot-pagespeed.git"
+    }
   "main": "hubot-pagespeed.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
