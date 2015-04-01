@@ -30,6 +30,25 @@
 
 	var divider = new Array(65).join('-') + '\n';
 
+    var format_start;
+    var format_end;
+
+    switch(robot.adapterName) {
+        case 'slack':
+            format_start = '```';
+            format_end = '```';
+            break;
+        case 'shell':
+            format_start = ' ';
+            format_end = ' ';
+            divider = ' ';
+            break;
+        default:
+            format_start = '/quote';
+            format_end = ' ';
+    } 
+    msg.send(robot.adapterName);
+
 	var buffer = function (msg, length) {
 	  var buffer = '';
 
@@ -95,23 +114,26 @@
         psi(options, function(err, data) {
 		var output;
 		output = [
-		      '/quote ',
+		      format_start,
 		      divider,
-		      generateScore(data.id, strategy, data.score)
+		      generateScore(data.id, strategy, data.score),
+              format_end
 		].join('\n');
 		msg.send(output);
 
 		output = [
-		      '/quote ',
+		      format_start,
 		      divider,
-		      generateStatistics(data.pageStats)
+		      generateStatistics(data.pageStats),
+              format_end
 		].join('\n');
 		msg.send(output);
 
 		output = [
-		      '/quote ',
+		      format_start,
 		      divider,
-		      generateRuleSetResults(data.formattedResults.ruleResults)
+		      generateRuleSetResults(data.formattedResults.ruleResults),
+              format_end
 		].join('\n');
 		msg.send(output);
 	});
