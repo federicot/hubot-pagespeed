@@ -1,5 +1,5 @@
 // Description:
-//   PageSpeed Insights
+//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/
 //
 // Dependencies:
 //   pretty-bytes: ^1.0.1
