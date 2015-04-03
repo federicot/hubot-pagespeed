@@ -47,8 +47,8 @@
         default:
             format_start = '/quote';
             format_end = ' ';
-    } 
-    msg.send(robot.adapterName);
+    }
+    msg.send("Fetching. One moment please...");
 
 	var buffer = function (msg, length) {
 	  var buffer = '';
