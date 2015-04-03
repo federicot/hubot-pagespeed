@@ -1,5 +1,5 @@
 // Description:
-//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/ 
+//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/
 //
 // Dependencies:
 //   addyosmani/psi
@@ -8,7 +8,8 @@
 //   None
 //
 // Commands:
-//   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url> 
+//   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url>
+//
 
 (function() {
   var psi = require('psi');
