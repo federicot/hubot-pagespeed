@@ -6,7 +6,7 @@
 //   psi: ^0.1.2
 //
 // Configuration:
-//   None
+//   NONE
 //
 // Commands:
 //   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url>
