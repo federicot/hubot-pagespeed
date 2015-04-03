@@ -1,8 +1,9 @@
 // Description:
-//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/
+//   PageSpeed Insights
 //
 // Dependencies:
-//   addyosmani/psi
+//   pretty-bytes: ^1.0.1
+//   addyosmani/psi: ^0.1.2
 //
 // Configuration:
 //   None
