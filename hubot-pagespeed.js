@@ -3,7 +3,7 @@
 //
 // Dependencies:
 //   pretty-bytes: ^1.0.1
-//   addyosmani/psi: ^0.1.2
+//   psi: ^0.1.2
 //
 // Configuration:
 //   None
@@ -11,6 +11,8 @@
 // Commands:
 //   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url>
 //
+// Author:
+//   federicot
 
 (function() {
   var psi = require('psi');
