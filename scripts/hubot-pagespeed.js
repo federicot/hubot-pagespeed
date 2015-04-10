@@ -1,14 +1,18 @@
 // Description:
-//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/ 
+//   PageSpeed Insights - https://developers.google.com/speed/pagespeed/
 //
 // Dependencies:
-//   addyosmani/psi
+//   pretty-bytes: ^1.0.1
+//   psi: ^0.1.2
 //
 // Configuration:
-//   None
+//   NONE
 //
 // Commands:
-//   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url> 
+//   hubot pagespeed <url> (desktop|mobile) - Get PageSpeed results for <url>
+//
+// Author:
+//   federicot
 
 (function() {
   var psi = require('psi');
@@ -46,8 +50,8 @@
         default:
             format_start = '/quote';
             format_end = ' ';
-    } 
-    msg.send(robot.adapterName);
+    }
+    msg.send("Fetching. One moment please...");
 
 	var buffer = function (msg, length) {
 	  var buffer = '';
